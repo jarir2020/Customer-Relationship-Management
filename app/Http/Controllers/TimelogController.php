@@ -787,6 +787,21 @@ class TimelogController extends AccountBaseController
         return Reply::dataOnly(['status' => 'success']);
     }
 
+    public function revertTimelog(Request $request)
+    {
+        ProjectTimeLog::where('id', $request->id)->update(
+            [
+                'approved' => 0,
+                'approved_by' => null,
+                'rejected' => 0,
+                'rejected_by' => null,
+                'rejected_at' => null,
+            ]
+        );
+
+        return Reply::dataOnly(['status' => 'success']);
+    }
+
     public function export()
     {
         abort_403(!canDataTableExport());
