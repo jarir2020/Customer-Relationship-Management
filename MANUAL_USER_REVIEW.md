@@ -38,6 +38,25 @@ Items that still need investigation or manual testing. These are NOT blockers �
 
 ---
 
+## Phase 1.3 — Invoice & Estimate (Needs Manual Verification)
+
+These items appear functional in code review but may have edge cases:
+
+1. **Project budget calculation** — `ProjectController::amountBudgetChartData()` calculates planned vs actual. If budget charts show wrong values, check the `earnings` query — it sums `Payment::where('status', 'complete')` which may miss partial payments.
+
+2. **Invoice PDF download** — Uses dompdf. If downloads fail or produce blank PDFs, check:
+   - Template path: `invoices.pdf.{template}`
+   - CSS loading: `isRemoteEnabled` is true, but external assets may not load
+   - Filename generation in `domPdfObjectForDownload()`
+
+3. **Estimate product edit** — If editing estimate products doesn't persist, check `EstimateController::update()` for mass-assignment or validation issues.
+
+4. **Invoice generation from estimates** — Verify the conversion flow in `EstimateController::convertToInvoice()`. If amounts mismatch, the issue is likely in the item-level amount calculation.
+
+5. **Estimate public link** — Public estimates use encrypted links. If links return 404, check route middleware and token expiry.
+
+6. **Contract filename & PDF formatting** — Contracts use `dompdf` too. If filenames contain special characters, they may break downloads. Check `ContractController::download()` for sanitization.
+
 ## General Notes
 
 - PHPUnit 10 won't install due to locked composer deps + PHP 8.3. Using PHPUnit 9 phar for tests.
