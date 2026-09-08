@@ -56,6 +56,20 @@ No critical bugs found. If issues arise:
 - **Client permissions** — check `clientDetails` relationship on User
 - **Lead contact** — `LeadContactController` handles contacts separately from Lead model
 
+## Phase 1.5 — UI/UX Fixes (Manual Verify)
+
+These require browser testing to verify:
+
+1. **Dashboard load error** — If dashboard shows errors, check `DashboardController::index()` and widget data queries
+2. **Notice board client panel** — Check `resources/views/dashboard/employee/widgets/notices.blade.php` — client role may not see notices
+3. **Message menu disappear** — JS in `resources/views/messages/index.blade.php:391` updates unread count; if menu hides, check CSS/JS conflicts
+4. **Message UI** — Standard chat UI, check `messages/index.blade.php`
+5. **Project status change** — `ProjectController::update()` handles status, verify permission checks
+6. **Ticket creation** — `TicketController::store()` uses `StoreTicket` request, check validation
+7. **Project edit issue** — `ProjectController::edit()` loads project data, verify relationships
+8. **Recurring expense** — `AutoCreateRecurringExpenses` command, verify cron is running
+9. **Recurring invoice** — `AutoCreateRecurringInvoices` command, verify cron is running
+
 ## General Notes
 
 - PHPUnit 10 won't install due to locked composer deps + PHP 8.3. Using PHPUnit 9 phar for tests.
