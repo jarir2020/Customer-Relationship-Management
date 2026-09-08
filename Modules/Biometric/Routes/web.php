@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use $MODULE_NAMESPACE$\Biometric\$CONTROLLER_NAMESPACE$\BiometricController;
+use Modules\Biometric\Http\Controllers\BiometricController;
 
 /*
 |--------------------------------------------------------------------------
