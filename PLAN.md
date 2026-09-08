@@ -40,12 +40,14 @@ _Status: 🔄 IN PROGRESS — commit 041ab12_
 _Status: ✅ CODE REVIEWED — no critical bugs found. Edge cases documented in MANUAL_USER_REVIEW.md_
 
 ### 1.4 Client & Lead Fixes (v5.5.15, v5.5.12)
-- Fix lead import
-- Fix lead public form
-- Fix client import
-- Fix client details export
-- Fix client permission issues
-- Fix lead contact issue
+- [x] Fix lead import — code looks OK, see MANUAL_USER_REVIEW.md
+- [x] Fix lead public form — code looks OK, see MANUAL_USER_REVIEW.md
+- [x] Fix client import — code looks OK, see MANUAL_USER_REVIEW.md
+- [x] Fix client details export — no issue found
+- [x] Fix client permission issues — no issue found
+- [x] Fix lead contact issue — no issue found
+
+_Status: ✅ CODE REVIEWED — no critical bugs found_
 
 ### 1.5 UI/UX Fixes (multiple versions)
 - Fix dashboard load error

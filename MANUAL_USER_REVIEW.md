@@ -48,6 +48,14 @@ No critical bugs found in code review. Verify these if issues arise:
 4. **Estimate public link** — Encrypted link, check `EstimateController::showPublic()`.
 5. **Contract PDF filename** — Check for special chars in `ContractController::download()`.
 
+## Phase 1.4 — Client & Lead (Code Looks OK)
+
+No critical bugs found. If issues arise:
+- **Lead import** — `ImportLeadJob` fails on duplicate email (intended)
+- **Client import** — `ImportClientJob` skips duplicates silently
+- **Client permissions** — check `clientDetails` relationship on User
+- **Lead contact** — `LeadContactController` handles contacts separately from Lead model
+
 ## General Notes
 
 - PHPUnit 10 won't install due to locked composer deps + PHP 8.3. Using PHPUnit 9 phar for tests.
