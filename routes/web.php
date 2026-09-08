@@ -239,6 +239,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'account'], function () {
             Route::post('archive-delete/{id}', [ProjectController::class, 'archiveDestroy'])->name('projects.archive_delete');
             Route::get('archive', [ProjectController::class, 'archive'])->name('projects.archive');
             Route::post('apply-quick-action', [ProjectController::class, 'applyQuickAction'])->name('projects.apply_quick_action');
+            Route::get('export', [ProjectController::class, 'export'])->name('projects.export');
             Route::post('updateStatus/{id}', [ProjectController::class, 'updateStatus'])->name('projects.update_status');
             Route::post('store-pin', [ProjectController::class, 'storePin'])->name('projects.store_pin');
             Route::post('destroy-pin/{id}', [ProjectController::class, 'destroyPin'])->name('projects.destroy_pin');

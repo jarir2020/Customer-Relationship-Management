@@ -49,6 +49,10 @@
                                     aria-labelledby="dropdownMenuLink" tabindex="0">
                                     <a class="dropdown-item openRightModal"
                                         href="{{ route('clients.edit', $client->id) }}">@lang('app.edit')</a>
+                                    @if(in_array('orders', user_modules()))
+                                        <a class="dropdown-item openRightModal"
+                                            href="{{ route('orders.create') . '?client_id=' . $client->id }}">@lang('app.addOrder')</a>
+                                    @endif
                                 </div>
                             </div>
                         </div>
