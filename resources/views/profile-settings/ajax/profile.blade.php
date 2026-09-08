@@ -163,7 +163,7 @@
             <div class="col-lg-4">
                 <x-forms.datepicker fieldId="date_of_birth" :fieldLabel="__('modules.employees.dateOfBirth')"
                                     fieldName="date_of_birth" :fieldPlaceholder="__('placeholders.date')"
-                                    :fieldValue="($user->employeeDetail->date_of_birth ? $user->employeeDetail->date_of_birth->format(company()->date_format) : '')"/>
+                                    :fieldValue="($user->employeeDetail && $user->employeeDetail->date_of_birth ? $user->employeeDetail->date_of_birth->format(company()->date_format) : '')"/>
             </div>
             <div class="col-lg-4">
                 <x-forms.label class="my-3" fieldId="slack_username"
@@ -174,7 +174,7 @@
                     </x-slot>
 
                     <input type="text" class="form-control height-35 f-14" name="slack_username"
-                           id="slack_username" value="{{ $user->employeeDetail->slack_username }}">
+                           id="slack_username" value="{{ $user->employeeDetail ? $user->employeeDetail->slack_username : '' }}" @if(!$user->employeeDetail) readonly @endif>
                 </x-forms.input-group>
             </div>
         @endif
@@ -191,7 +191,7 @@
                 <x-forms.select fieldId="marital_status" :fieldLabel="__('modules.employees.maritalStatus')"
                         fieldName="marital_status" :fieldPlaceholder="__('placeholders.date')">
                         @foreach (\App\Enums\MaritalStatus::cases() as $status)
-                            <option @selected($user->employeeDetail->marital_status == $status)
+                            <option @selected(($user->employeeDetail && $user->employeeDetail->marital_status == $status))
                                 value="{{ $status->value }}">{{ $status->label() }}</option>
                         @endforeach
                 </x-forms.select>
@@ -199,7 +199,7 @@
             <div class="col-lg-3 col-md-6 d-none marriage_date">
                 <x-forms.datepicker fieldId="marriage_anniversary_date" :fieldLabel="__('modules.employees.marriageAnniversaryDate')"
                     fieldName="marriage_anniversary_date" :fieldPlaceholder="__('placeholders.date')"
-                    :fieldValue="$user->employeeDetail->marriage_anniversary_date ? Carbon\Carbon::parse($user->employeeDetail->marriage_anniversary_date)->format(company()->date_format) : '' " />
+                    :fieldValue="($user->employeeDetail && $user->employeeDetail->marriage_anniversary_date ? Carbon\Carbon::parse($user->employeeDetail->marriage_anniversary_date)->format(company()->date_format) : '')" />
             </div>
         @endif
 
@@ -209,7 +209,7 @@
                 <x-forms.textarea class="mr-0 mr-lg-2 mr-md-2" :fieldLabel="__('modules.profile.yourAddress')"
                                   fieldRequired="false" fieldName="address" fieldId="address"
                                   :fieldPlaceholder="__('placeholders.address')"
-                                  :fieldValue="($user->employeeDetail ? $user->employeeDetail->address : $user->clientDetails->address)">
+                                  :fieldValue="($user->employeeDetail ? $user->employeeDetail->address : ($user->clientDetails ? $user->clientDetails->address : ''))">
                 </x-forms.textarea>
 
             </div>
@@ -266,7 +266,7 @@
             datepicker('#date_of_birth', {
                 position: 'bl',
                 maxDate: new Date(),
-                @if(!is_null($user->employeeDetail->date_of_birth))
+                @if($user->employeeDetail && !is_null($user->employeeDetail->date_of_birth))
                 dateSelected: new Date("{{ $user->employeeDetail->date_of_birth ? str_replace('-', '/', $user->employeeDetail->date_of_birth) : str_replace('-', '/', now()) }}"),
                 @endif
                 ...datepickerConfig

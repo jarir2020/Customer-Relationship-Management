@@ -4,6 +4,7 @@
 /storage/*.key
 /vendor
 .env
+.env.dev
 credentials.txt
 .env.backup
 .phpunit.result.cache

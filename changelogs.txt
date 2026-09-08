@@ -1,0 +1,388 @@
+ New update available 6.0.17
+Note: You will get logged out after update. Login again to use the application.
+If the Update Now button does not work then follow the Manual update instructions as mentioned in the documentation.
+ Update Summary
+Version: 6.0.17 (Release date: 31 Aug 2026)
+Bug fix
+Version: 6.0.16 (Release date: 18 Aug 2026)
+Clockin bug fix with location
+Version: 6.0.15 (Release date: 11 Aug 2026)
+Bug fixes
+Version: 6.0.14 (Release date: 06 Aug 2026)
+Multiple Lead forms
+Email to leads and have history
+Other Bug Fixes
+Version: 6.0.13 (Release date: 17 Jul 2026)
+Fix leave counts
+Version: 6.0.12 (Release date: 16 Jul 2026)
+Bug fixes for leaves and attendance
+Added expiry option for carry forward leaves
+Added unlimited leave type
+Version: 6.0.11 (Release date: 14 Jul 2026)
+Invoice Reminder advance setting added
+Version: 6.0.10 (Release date: 10 Jul 2026)
+Added support for the new module - Employee monitoring module
+
+This module adds a complete employee monitoring layer on top of Worksuite — screenshots, app & website usage, keyboard/mouse activity, idle detection, and task-level time tracking — all surfaced in a manager dashboard built natively into your existing Worksuite panel.
+Version: 6.0.09 (Release date: 30 Jun 2026)
+Bug Fixes
+Version: 6.0.08 (Release date: 01 Jun 2026)
+Payfast related bug fixes
+Other minor bug fixes
+Version: 6.0.07 (Release date: 06 May 2026)
+Bug Fixes
+Version: 6.0.06 (Release date: 04 May 2026)
+Bug Fixes
+Version: 6.0.05 (Release date: 08 Apr 2026)
+Leave Apply issue fixed Laravel 12
+Estimate feature improvement
+Version: 6.0.04 (Release date: 03 Apr 2026)
+More Bug fixes for Laravel 12
+Version: 6.0.03 (Release date: 02 Apr 2026)
+More bug fixes of Laravel 12 version
+
+We've upgraded the application to Laravel 12. Please read the following before updating:
+Important: Only proceed with the update if you have an active support plan. If anything goes wrong, our team will be ready to assist you right away.
+Please note that some features may temporarily behave unexpectedly after the upgrade. If you notice anything unusual, report it to us and our team will prioritize a fix immediately.
+Thank you for your continued trust in us.
+Version: 6.0.02 (Release date: 28 Mar 2026)
+Other Bug fixes based on Laravel 12
+Version: 6.0.01 (Release date: 26 Mar 2026)
+Dashboard load error fix
+timelog entry fix
+Version: 6.0.0 (Release date: 25 Mar 2026)
+Major Update: Laravel 12 Upgrade
+We've upgraded the application to Laravel 12. Please read the following before updating:
+Important: Only proceed with the update if you have an active support plan. If anything goes wrong, our team will be ready to assist you right away.
+Please note that some features may temporarily behave unexpectedly after the upgrade. If you notice anything unusual, report it to us and our team will prioritize a fix immediately.
+Thank you for your continued trust in us.
+Version: 5.5.27 (Release date: 16 Mar 2026)
+Bug Fixes
+Version: 5.5.26 (Release date: 06 Mar 2026)
+Bug Fixes to the application
+Version: 5.5.25 (Release date: 19 Feb 2026)
+Leave Type Visibility on Employees Dashboard Resolved
+Template Duplication Issue
+Tasks Not Added Resolved
+Client Details Display on Tickets Enhanced
+Project Missing from Invoice Fixed
+Holiday Visibility Issue Fixed
+Invoice Payment Details Issue Finance Settings Fixed
+Recurring Expense Bill Visibility Issue Fixed
+Recurring Invoice Product Removal Issue Fixed
+Employee Import Issue Fixed
+Event Attendees Visibility Issue Fixed
+Deal Report Issue Fixed
+Payments Module Permission Issue Unauthorized Payment Access Resolved
+Project Progress Calculation Issue Based on Project Dates Resolved
+Weekly Timesheet Issue Fixed
+Version: 5.5.24 (Release date: 22 Jan 2026)
+Compatibility For new Aitools Module
+Minor Bug Fixes
+Version: 5.5.23 (Release date: 19 Jan 2026)
+Fix: Message menu disappear
+Other bug fixes
+Version: 5.5.22 (Release date: 26 Dec 2025)
+Compatibility For recently released Group Message Module and Onboarding Module
+Version: 5.5.21 (Release date: 16 Dec 2025)
+Attendance Regulisation Added
+Bug Fixes
+Version: 5.5.20 (Release date: 24 Nov 2025)
+Fixed Leave Apply Issue
+Fixed Lead Import Improvement Suggestion
+Fixed Project Wise Report Issue
+Fixed Project Import Issue
+Fixed Expense Import Issue
+Fixed Custom Field Issue In Timelog Export CSV
+Fixed Mark Attendance Issue
+New Feature Add Permission To View Employee Menu In Role And Permission Setting
+Fixed Currency Conversion Issue On Project Dashboard--> Overview Tab
+Fixed Read By Issue In Notice Board
+Feature Improvement Expiry Alert For Immigration Issue
+New Feature Document Expiry Reminder & Bank Account Sort
+Feature Improvement Late Mark By Biometric By Observer
+Version: 5.5.19 (Release date: 17 Oct 2025)
+Login Issue Fixed
+Version: 5.5.18 (Release date: 15 Oct 2025)
+Attendance half day Via biometric device fixed
+Document Expiry Reminder & Bank Account Sort added
+Version: 5.5.17 (Release date: 08 Oct 2025)
+Calculate through project time and date
+Version: 5.5.16 (Release date: 07 Oct 2025)
+Fixed task timer issue
+Fixed employee timelogs issue
+Fixed duplicate task timer issue
+Fixed timesheet entry & visible time issue
+Fixed lead form issue
+Fixed automatic clock out issue
+Fixed task assignment UI issue
+Fixed product image issue
+Fixed recurring task issue
+Fixed notice board UI issue
+Fixed employee UI issue
+Fixed project status change issue
+Fixed ticket notification issue
+Fixed employee shift 500 error
+Fixed edit project status issue
+Fixed invoice edit issue
+Fixed Public lead form issue
+Fixed Message Ui issue
+Version: 5.5.15 (Release date: 02 Sep 2025)
+Fixed Project Budget Issue
+Fixed Lead Public Form Issue
+Fixed Lead Import Issue
+Fixed Reporting to widget show staff Issue
+Fixed Deals Export Issue
+Fixed Follow Up Reminder Mail Issue
+Fixed Hours Logged On Advanced Dashboard Issue
+Fixed Ticket UI Issue
+Fixed Leave Reason Issue
+Fixed Time sheet Employee Filter Issue
+Fixed Notification Issue
+New Feature Pending Follow Up Widgets
+Fixed The Widget Contract Date Issue
+Fixed Project UX Issue
+Fixed Recurring Task Creation Issue
+New Feature An option to revert back the status time sheet after approval or reject
+Fixed Recurring task details page Issue
+Fixed Lead Create Mail Issue
+Fixed Timesheet sub tabs Issue
+Fixed Weekly Time sheet Issue
+New Feature Timesheet 'Reject' Filter
+New Feature Change downloaded Contracts file name & PDF formatting
+Fixed Client Import Issue
+Fixed Ticket Filter Issue
+Fixed Estimates Data Table Issue
+Fixed Invoice Data Table Issue
+Fixed Project Discussion
+Fixed Ticket Creation Issue
+Fixed Client Timelog Issue
+New Feature Project Tags
+Fixed Project Notes Issue
+Fixed Google Calendar Not Sync Issue
+Fixed Increment & Promotion Issue
+New Feature Employee Module--Reporting
+Fixed Client View Employee Permission Denied Issue
+Fixed Invoice PDF Download Issue
+New Feature Order Page Suggestion for Client Profile
+Version: 5.5.14 (Release date: 23 Jul 2025)
+Invoice page not loading fix
+Version: 5.5.13 (Release date: 15 Jul 2025)
+New Conversation UI Issue Fixed
+Task Status Issue Fixed
+Task, Shift & Editor Issue Fixed
+Message to a client from Project Module Issue Fixed
+Project Import Date Issue Fixed
+Recurring Event Issue Fixed
+Support Ticket improvement
+Day & Week filter in Gantt chart added
+Invoice Page improvement
+Attendance Detail Box Fixed
+Notice Email Notification Issue Fixed
+GDPR Setting Issue Fixed
+Estimate & Proposal Product Image Issue Fixed
+Twice Self Login without clock out Issue Fixed
+Recruit Module Dashboard UI Issue Fixed
+Recruit Module Issue Fixed
+Estimate Tab Issue Fixed
+Language Translation Issue in Recruit Module Fixed
+Task Timer Issue Fixed
+Task Dependency Feature added
+Purchase Module Feature Improvement
+Client Module Feature Improvement
+Time sheet Reject new feature added
+Department filter in time sheet added
+Client event improvement
+Lead Conversion Feature Improvement
+Time log inactive member issue
+Earned leave balance issue Fixed
+Version: 5.5.12 (Release date: 09 Jun 2025)
+Attendance bug fix
+Estimate Bug fix
+Version: 5.5.11 (Release date: 04 Jun 2025)
+Fixed client contact notification issue
+Implemented new Milestone tab in Project Template
+Fixed task visibility on calendar
+Fixed language translation issue in task
+Added multi-language support in public ticket URL
+Fixed task creation issue
+Fixed reports access issue
+Fixed contract issue
+Improved proposal template
+Fixed recurring invoice issue
+Fixed night shift issue in attendance
+Improved order page
+Fixed ticket settings permission issue
+Fixed export file issue for custom fields
+Fixed leave management issue
+Improved invoice page
+Improved estimate page
+Added custom field feature in order fields
+Fixed sub-task edit issue
+Fixed the lead contact issue
+Fixed time log issue
+Fixed client ticket permission issue
+Fixed project status settings issue
+Improved proposal page
+Added the estimate tab in Projects
+Added Timesheet Reporting Manager feature
+Fixed task board issue
+Fixed invoice generation issue
+Added clock-out location in attendance
+Enabled notifications for private tasks
+Fixed language translation issue
+Version: 5.5.1 (Release date: 05 May 2025)
+Fixed expense permission issue
+Fixed project status issue
+Fixed client details export issue
+Fixed time-log report issue
+Fixed duplicate record issue in time-log
+Fixed finance permission issue
+Fixed holiday issue in shift assignment
+Fixed filter issue in Deal Kanban board
+Fixed ticket creation issue
+Fixed mark attendance issue
+Fixed time-log creation issue
+Improved contract client details while creating new contracts
+Improved task filter functionality
+Fixed recurring invoice issue
+Fixed various UI/UX issues
+Fixed ticket security vulnerability
+Improved UI/UX in the messaging section
+Fixed weekly timesheet submission issue
+Fixed fresh seed issue
+Fixed event mail issue on completion
+Fixed event notification settings issue
+Added new filters on the Events page
+Fixed attendance timezone issue
+Fixed recurring expense issue
+Fixed estimate validity date issue
+Reporting managers can now approve weekly time-logs
+Version: 5.5.03 (Release date: 02 Apr 2025)
+Shipping address issue fixed
+Client contact ticket create issue Fixed
+Cannot stop timer Issue Fixed
+Mark attendance on half day leave issue fixed
+Description field issue Fixed
+Date Format for Custom Fields issue fixed
+Client email is visble in project export issue fixed
+Now we have project wise timelog consolidated report
+My calendar menu feature implemented
+New Feature with name of Employee wise task report
+New filter added on event page.
+UI/UX issue fixed
+Translation issue fixed
+Version: 5.5.02 (Release date: 04 Mar 2025)
+Language Translation issue fixed
+Inactive employee in shift roaster issue fixed
+Flexible issue fixed
+Invoice project issue fixed
+Message notification issue
+Round and robin issue fixed
+Employee leave permission issue fixed
+Notice board visibility issue fixed
+Location issue fixed
+Deal report issue fixed
+Attendance issue on day off issue fixed
+Event file storage issue fixed
+Estimate permission issue fixed
+Some client permission issue fixed
+Time log permission issue fixed
+Attendance export issue fixed
+Dashboard earning issue fixed
+Time log report graph issue fixed
+Project finished status issue fixed
+Some translation issue fixed
+Some UI/UX issue fixed
+Version: 5.5.01 (Release date: 05 Feb 2025)
+Client dashboard and contact issue
+Lead UX/UI issue
+Employee UX issue
+Shift request issue
+Leave file upload
+Now we have added monthly carry forward feature
+Leave update issue
+Project template edit button
+We have added attendance tab to employee overview
+Recurring expense custom fields issue
+Round robin deals issue
+Invoice pdf download issue
+Ticket access issue
+Bug on Adding Products / Category / Sub Categories under the Invoice page
+Version: 5.5.0 (Release date: 08 Jan 2025)
+Fixed Shift roster sanity error
+Fixed OR business address issue
+Fixed Hours Calculation issue in project
+Fixed Estimate product edit issue
+Fixed Project view in client issue
+Now we have Lead owner filter
+Fixed Knowlodge base page direct issue
+Fixed Milestone in project issue
+Fixed Notice board client panel issue
+We have added task status details in the top of task create form
+We have added more details in project export
+Fixed Employee project visibility issue
+Fixed Project edit issue
+Fixed Project timelog issue
+Fixed Estimate public link issue
+Fixed Estimate view and pdf issue
+Fixed Ticket and attendance issue
+Fixed Payment receipt currency symbol issue
+Now we can manually enter weekly timesheets
+Fixed Qr clock in radius issue
+Version: 5.4.9 (Release date: 02 Dec 2024)
+We have added a new feature for clock-in on holidays
+Fixed bugs for recurring invoices
+We have added custom fields for orders now
+Fixed deal create issue
+Fixed import issue in clients
+Pre-approval multiple leave issue fixed
+Fixed edit issue in project
+Now priority will show for tasks on the data table page
+Clock-in night shift issue fixed
+New feature added: Client contacts can log in
+Now QR code will be visible on the invoice page
+Project roadmap color code issue fixed
+Issue fixed for expense while importing
+Roles & permission issue fixed
+Event canceled notification issue fixed
+Time log report issue fixed
+We have improved task status notifications in Slack
+Employee clock-in via QR code issue fixed
+We have added some filters in the task board
+Repeat task issue fixed
+Recaptcha V3 issue fixed
+Shift roaster issue fixed
+System Details	
+App Version	5.4.8
+Laravel Version	10.48.22
+PHP Version	8.3.12 
+MySQL Version	8.4.11-0ubuntu0.26.04.1
+
+
+They have also listed new modules as updates:
+
+Asset Management Module – Track and manage company assets efficiently
+REST API Module – Integrate Worksuite with other applications
+Payroll Module – Streamline your payroll management process
+SMS Module – Send SMS notifications directly from the platform
+Zoom Meeting Module – Integrate Zoom meetings into your workflow
+Recruit Module – Manage your recruitment process efficiently
+Language Pack Module – Add multiple language support to your system
+Purchase Module – Manage purchase orders and vendor relationships
+E-Invoicing Module – Create and manage electronic invoices
+Project Roadmap – Advanced reporting for Worksuite projects
+Webhooks Module – Set up automated workflows with external services
+Cyber Security Module – Enhance the security of your Worksuite installation
+QRCode Module – Generate and manage QR codes for various purposes
+Letter Module – Create and manage official letters and correspondence
+Biolinks Module – Create custom bio link pages for team members
+Performance Module – Track and evaluate employee performance
+Biometric Module – Connect your Zkteco Biometric device and start recording punch in and our directly from your device
+ServerManager Module – Manager your domains and server details
+Policy Module – Now your polices and get it signed by employees
+Onboarding Module – Now onboard your employees with ease
+Group Mesage Module – Create group of employees for messaging
+Aitools Module – Ai on your hands
+
+I think you can create them by own.. SIgnificant updates have been made to the application, including bug fixes, new features, and module additions. Please ensure you have an active support plan before proceeding with the update to avoid any issues. WRITE A PLAN.md
