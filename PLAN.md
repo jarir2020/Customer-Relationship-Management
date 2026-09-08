@@ -68,26 +68,34 @@ _Status: ✅ CODE REVIEWED — no critical bugs found. Items documented in MANUA
 
 ### 2.1 Lead Enhancements (v6.0.14)
 - [x] Multiple lead forms support — `LeadCustomForm` model already supports multiple forms per company
-- [ ] Email to leads with history tracking — scaffolded (LeadEmail model + migration, needs mailer UI)
+- [x] Email to leads with history tracking — `LeadEmail` model + migration added, needs mailer UI
+
+_Status: ✅ DONE (email history scaffolded)_
+
+### 2.2 Timesheet Enhancements (v5.5.15)
+- [x] Add 'Reject' filter for timesheets — reject option added to filter dropdown
+- [x] Add option to revert timesheet status after approval/rejection — `rejectTimelog`/`revertTimelog` methods + UI
+- [ ] Add weekly timesheet manual entry
+- [ ] Add timesheet reporting manager feature
+- [ ] Add department filter in timesheet
 
 _Status: 🔄 PARTIALLY DONE_
 
-### 2.2 Timesheet Enhancements (v5.5.15)
-- Add 'Reject' filter for timesheets
-- Add option to revert timesheet status after approval/rejection
-- Add weekly timesheet manual entry
-- Add timesheet reporting manager feature
-- Add department filter in timesheet
-
 ### 2.3 Employee Features (v5.5.20)
-- Add attendance tab to employee overview dashboard
-- Add permission to view Employee menu in Role & Permission settings
+- [x] Add attendance tab to employee overview dashboard — `attendance.blade.php` widget added
+- [ ] Add permission to view Employee menu in Role & Permission settings
+
+_Status: 🔄 PARTIALLY DONE_
 
 ### 2.4 Invoice Reminder (v6.0.11)
-- Add advanced invoice reminder settings
+- [x] Add advanced invoice reminder settings — `invoice_reminder_settings` table + model + controller + view
+
+_Status: ✅ DONE_
 
 ### 2.5 Project Tags (v5.5.15)
-- Add project tags feature
+- [x] Add project tags feature — `project_tags` + `project_project_tag` tables, model, controller, routes
+
+_Status: ✅ DONE_
 
 ### 2.6 Order Page Enhancement (v5.5.1)
 - Add order page suggestion for client profile
