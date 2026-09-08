@@ -56,10 +56,21 @@ class TimeLogsDataTable extends BaseDataTable
 
             if (!is_null($row->end_time)) {
                 if ($this->approveTimelogPermission == 'all') {
-                    if (!$row->approved) {
+                    if (!$row->approved && !$row->rejected) {
                         $action .= '<a class="dropdown-item approve-timelog" href="javascript:;" data-time-id="' . $row->id . '">
                                 <i class="fa fa-check mr-2"></i>
                                 ' . trans('app.approve') . '
+                            </a>';
+                        $action .= '<a class="dropdown-item reject-timelog" href="javascript:;" data-time-id="' . $row->id . '">
+                                <i class="fa fa-times mr-2"></i>
+                                ' . trans('app.reject') . '
+                            </a>';
+                    }
+
+                    if ($row->rejected) {
+                        $action .= '<a class="dropdown-item revert-timelog" href="javascript:;" data-time-id="' . $row->id . '">
+                                <i class="fa fa-undo mr-2"></i>
+                                ' . trans('app.revert') . '
                             </a>';
                     }
                 }

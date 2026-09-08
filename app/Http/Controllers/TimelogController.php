@@ -762,7 +762,25 @@ class TimelogController extends AccountBaseController
         ProjectTimeLog::where('id', $request->id)->update(
             [
                 'approved' => 1,
-                'approved_by' => user()->id
+                'approved_by' => user()->id,
+                'rejected' => 0,
+                'rejected_by' => null,
+                'rejected_at' => null,
+            ]
+        );
+
+        return Reply::dataOnly(['status' => 'success']);
+    }
+
+    public function rejectTimelog(Request $request)
+    {
+        ProjectTimeLog::where('id', $request->id)->update(
+            [
+                'approved' => 0,
+                'approved_by' => null,
+                'rejected' => 1,
+                'rejected_by' => user()->id,
+                'rejected_at' => now(),
             ]
         );
 

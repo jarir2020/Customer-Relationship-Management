@@ -459,6 +459,7 @@ return array(
     'employee' => 'Employee',
     'complete' => 'Complete',
     'approved' => 'Approved',
+    'rejected' => 'Rejected',
     'reject' => 'Reject',
     'preApprove' => 'Pre-Approve',
     'progress' => 'Progress',

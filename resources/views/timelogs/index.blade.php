@@ -87,7 +87,7 @@
                             <option value="all">@lang('app.all')</option>
                             <option value="1">@lang('app.approved')</option>
                             <option value="0">@lang('app.pending')</option>
-                            <option value="2">@lang('app.active')</option>
+                            <option value="2">@lang('app.rejected')</option>
                         </select>
                     </div>
                 </div>
