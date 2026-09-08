@@ -109,6 +109,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'account/settings'], function 
     Route::post('invoice-settings/update-template/{id}', [InvoiceSettingController::class, 'updateTemplate'])->name('invoice_settings.update_template');
     Route::post('invoice-settings/update-prefix/{id}', [InvoiceSettingController::class, 'updatePrefix'])->name('invoice_settings.update_prefix');
     Route::resource('invoice-settings', InvoiceSettingController::class);
+    Route::resource('invoice-reminder-settings', InvoiceReminderSettingController::class);
 
     /* unitType */
     Route::resource('unit-type', UnitTypeController::class);
