@@ -153,3 +153,15 @@ These modules are referenced in the changelog. Create skeleton modules with basi
 8. Phase 4 (Infrastructure) — final verification
 
 Each phase/feature gets its own commit. Test after each commit.
+
+---
+
+## Testing Requirement
+
+For **every feature or bug fix** implemented:
+
+1. Generate unit/feature tests covering the change
+2. Run the test suite and confirm it passes
+3. Commit tests alongside the feature code
+
+This ensures each change is verifiable and regressions are caught early.
