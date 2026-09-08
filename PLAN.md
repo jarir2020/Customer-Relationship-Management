@@ -10,10 +10,12 @@
 These are fixes for existing broken behavior — do these first.
 
 ### 1.1 Leave & Attendance Fixes (v6.0.12)
-- Fix leave counts calculation
-- Fix attendance bug with biometric clock-in
-- Add expiry option for carry-forward leaves
-- Add unlimited leave type support
+- [x] Fix leave counts calculation (half-day weighting)
+- [x] Fix attendance bug with biometric clock-in (location null safety)
+- [x] Add expiry option for carry-forward leaves
+- [x] Add unlimited leave type support
+
+_Status: ✅ DONE — commit 6588e1e_
 
 ### 1.2 Task & Timelog Fixes (v6.0.16, v6.0.09)
 - Fix clock-in with location tracking
