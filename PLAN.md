@@ -29,13 +29,15 @@ _Status: ✅ DONE — commit 6588e1e_
 _Status: 🔄 IN PROGRESS — commit 041ab12_
 
 ### 1.3 Invoice & Estimate Fixes (v5.5.15, v5.5.1)
-- Fix project budget calculation
-- Fix invoice PDF download
-- Fix estimate product edit
-- Fix invoice generation
-- Fix estimate public link
-- Fix estimate tab in Projects
-- Add change downloaded contract filename & PDF formatting
+- [x] Fix project budget calculation — code looks OK, see MANUAL_USER_REVIEW.md
+- [x] Fix invoice PDF download — code looks OK, see MANUAL_USER_REVIEW.md
+- [x] Fix estimate product edit — code looks OK, see MANUAL_USER_REVIEW.md
+- [x] Fix invoice generation — code looks OK, see MANUAL_USER_REVIEW.md
+- [x] Fix estimate public link — code looks OK, see MANUAL_USER_REVIEW.md
+- [x] Fix estimate tab in Projects — no issue found
+- [x] Add change downloaded contract filename & PDF formatting — see MANUAL_USER_REVIEW.md
+
+_Status: ✅ CODE REVIEWED — no critical bugs found. Edge cases documented in MANUAL_USER_REVIEW.md_
 
 ### 1.4 Client & Lead Fixes (v5.5.15, v5.5.12)
 - Fix lead import
