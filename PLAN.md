@@ -67,8 +67,10 @@ _Status: ✅ CODE REVIEWED — no critical bugs found. Items documented in MANUA
 ## Phase 2: New Features
 
 ### 2.1 Lead Enhancements (v6.0.14)
-- Multiple lead forms support
-- Email to leads with history tracking
+- [x] Multiple lead forms support — `LeadCustomForm` model already supports multiple forms per company
+- [ ] Email to leads with history tracking — scaffolded (LeadEmail model + migration, needs mailer UI)
+
+_Status: 🔄 PARTIALLY DONE_
 
 ### 2.2 Timesheet Enhancements (v5.5.15)
 - Add 'Reject' filter for timesheets
