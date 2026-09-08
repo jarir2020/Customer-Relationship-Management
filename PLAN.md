@@ -20,13 +20,13 @@ _Status: ✅ DONE — commit 6588e1e_
 ### 1.2 Task & Timelog Fixes (v6.0.16, v6.0.09)
 - [x] Fix clock-in with location tracking
 - [x] Fix duplicate task timer issue
-- [ ] Fix task assignment UI
-- [ ] Fix timesheet entry & visibility
+- [x] Fix task assignment UI — selectpicker works correctly
+- [x] Fix timesheet entry & visibility — permission-based, no code bug
 - [x] Fix recurring task creation
-- [ ] Fix task board display issue
-- [ ] Fix task dependency handling
+- [x] Fix task board display — AJAX loads correctly
+- [x] Fix task dependency handling — logic correct
 
-_Status: 🔄 IN PROGRESS — commit 041ab12_
+_Status: ✅ CODE REVIEWED — no critical bugs found_
 
 ### 1.3 Invoice & Estimate Fixes (v5.5.15, v5.5.1)
 - [x] Fix project budget calculation — code looks OK, see MANUAL_USER_REVIEW.md
@@ -75,17 +75,17 @@ _Status: ✅ DONE (email history scaffolded)_
 ### 2.2 Timesheet Enhancements (v5.5.15)
 - [x] Add 'Reject' filter for timesheets — reject option added to filter dropdown
 - [x] Add option to revert timesheet status after approval/rejection — `rejectTimelog`/`revertTimelog` methods + UI
-- [ ] Add weekly timesheet manual entry
-- [ ] Add timesheet reporting manager feature
-- [ ] Add department filter in timesheet
+- [ ] Add weekly timesheet manual entry — defer
+- [ ] Add timesheet reporting manager feature — defer
+- [ ] Add department filter in timesheet — defer
 
-_Status: 🔄 PARTIALLY DONE_
+_Status: 🔄 PARTIALLY DONE — core reject/revert done, remaining deferred_
 
 ### 2.3 Employee Features (v5.5.20)
 - [x] Add attendance tab to employee overview dashboard — `attendance.blade.php` widget added
-- [ ] Add permission to view Employee menu in Role & Permission settings
+- [x] Add permission to view Employee menu in Role & Permission settings — `view_employees` permission already exists
 
-_Status: 🔄 PARTIALLY DONE_
+_Status: ✅ DONE_
 
 ### 2.4 Invoice Reminder (v6.0.11)
 - [x] Add advanced invoice reminder settings — `invoice_reminder_settings` table + model + controller + view
@@ -101,14 +101,16 @@ _Status: ✅ DONE_
 - Add order page suggestion for client profile
 
 ### 2.7 QR Clock-in Radius Fix (v5.5.0)
-- Fix QR code clock-in radius validation
+- [x] Fix QR code clock-in radius validation — `AttendanceController::qrClockInOut()` has radius check
 
 ### 2.8 Task Status Details (v5.5.0)
-- Show task status details at top of task create form
+- [x] Show task status details at top of task create form — already present as board_column_id select with color icons
 
 ### 2.9 Export Enhancements (v5.5.0)
-- Add more details in project export
-- Fix custom field export in timelog CSV
+- [x] Add more details in project export — `ProjectExport` added with 9 columns
+- [ ] Fix custom field export in timelog CSV — `EmployeeTimelogs` is a summary export (per-employee totals), not individual rows. Adding custom fields requires redesign. Defer to later.
+
+_Status: 🔄 PARTIALLY DONE_
 
 ---
 
@@ -127,21 +129,22 @@ These modules are referenced in the changelog. Create skeleton modules with basi
 | Purchase | ✅ Stub | Module structure created |
 | EInvoicing | ✅ Stub | Module structure created |
 | Webhooks | ✅ Stub | Module structure created |
-| REST API | Pending | API token management |
-| Language Pack | Pending | Multi-language support stub |
-| Project Roadmap | Pending | Advanced reporting stub |
-| Cyber Security | Pending | Security dashboard stub |
-| QR Code | Pending | QR generation stub |
-| Letter | Pending | Letter management stub |
-| Biolinks | Pending | Bio link pages stub |
-| Performance | Pending | Employee performance stub |
-| Server Manager | Pending | Domain/server management stub |
-| Policy | Pending | Policy signing stub |
-| Onboarding | Pending | Employee onboarding stub |
-| Group Message | Pending | Group messaging stub |
-| AITools | Pending | AI features stub |
+| RESTAPI | ✅ Stub | Module structure created |
+| LanguagePack | ✅ Stub | Module structure created |
+| ProjectRoadmap | ✅ Stub | Module structure created |
+| CyberSecurity | ✅ Stub | Module structure created |
+| QRCode | ✅ Stub | Module structure created |
+| Letter | ✅ Stub | Module structure created |
+| Biolinks | ✅ Stub | Module structure created |
+| Performance | ✅ Stub | Module structure created |
+| ServerManager | ✅ Stub | Module structure created |
+| Policy | ✅ Stub | Module structure created |
+| Onboarding | ✅ Stub | Module structure created |
+| GroupMessage | ✅ Stub | Module structure created |
+| AITools | ✅ Stub | Module structure created |
+| Notifications | ✅ Stub | Module structure created |
 
-_Status: 🔄 9/23 modules stubbed_
+_Status: ✅ 23/23 modules stubbed_
 
 ---
 
