@@ -933,6 +933,14 @@ class ProjectController extends AccountBaseController
      * @param \Illuminate\Http\Request $request
      * @return array
      */
+    public function export(Request $request)
+    {
+        abort_403(!canDataTableExport());
+
+        $projects = Project::allProjects()->get();
+        return Excel::download(new ProjectExport($projects), 'projects.xlsx');
+    }
+
     public function storePin(Request $request)
     {
         $pinned = new Pinned();
