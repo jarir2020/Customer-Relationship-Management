@@ -36,3 +36,4 @@ resources/lang/*
 !resources/lang/eng.json
 /public/user-uploads/*
 !public/user-uploads/.htaccess
+phpunit.phar

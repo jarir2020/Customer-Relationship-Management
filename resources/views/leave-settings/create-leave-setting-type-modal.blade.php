@@ -33,16 +33,17 @@
                                 <x-forms.select fieldId="leavetype" :fieldLabel="__('modules.leaves.leaveAllotmentType')" fieldName="leavetype" search="true">
                                     <option value="monthly">@lang('app.monthlyLeaveType')</option>
                                     <option value="yearly">@lang('app.yearlyLeaveType')</option>
+                                    <option value="unlimited">@lang('app.unlimitedLeaveType')</option>
                                 </x-forms.select>
                             </div>
 
 
-                            <div class="col-lg-4" id="yearly-leave-field" style="display: none;">
+                            <div class="col-lg-4 leave-quota-field" id="yearly-leave-field" style="display: none;">
                                 <x-forms.number :fieldLabel="__('modules.leaves.noOfYearlyLeaves')"
                                                 fieldName="yearly_leave_number" fieldId="yearly_leave_number" fieldValue="0" minValue="0" :popover="__('messages.leave.noOfYearlyLeaves')"/>
                             </div>
 
-                            <div class="col-lg-4" id="monthly-leave-field">
+                            <div class="col-lg-4 leave-quota-field" id="monthly-leave-field" style="display: none;">
                                 <x-forms.number :fieldLabel="__('modules.leaves.noOfMonthlyLeaves')"
                                                 fieldName="monthly_leave_number" fieldId="monthly_leave_number" fieldValue="0" minValue="0" :popover="__('messages.leave.noOfMonthlyLeaves')"/>
                             </div>
@@ -265,17 +266,21 @@
 
     $('#leavetype').change(function() {
         if ($(this).val() == 'monthly') {
-            $('#yearly-leave-field').hide();
-            $('#yearly_leave_number').attr('required', false);
+            $('.leave-quota-field').hide();
             $('#monthly-leave-field').show();
             $('#monthly_leave_number').attr('required', true);
             $('#monthly-leave-limit').hide();
             $('#monthly_limit').attr('required', false);
+        } elseif ($(this).val() == 'unlimited') {
+            $('.leave-quota-field').hide();
+            $('#monthly_leave_number').attr('required', false);
+            $('#yearly_leave_number').attr('required', false);
+            $('#monthly-leave-limit').hide();
+            $('#monthly_limit').attr('required', false);
         } else {
+            $('.leave-quota-field').hide();
             $('#yearly-leave-field').show();
             $('#yearly_leave_number').attr('required', true);
-            $('#monthly-leave-field').hide();
-            $('#monthly_leave_number').attr('required', false);
             $('#monthly-leave-limit').show();
             $('#monthly_limit').attr('required', true);
         }

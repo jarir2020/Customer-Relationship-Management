@@ -52,6 +52,10 @@ class LeaveTypeController extends AccountBaseController
             $leaveType->no_of_leaves = $request->monthly_leave_number;
             $leaveType->monthly_limit = 0;
 
+        }elseif($request->leavetype == 'unlimited'){
+            $leaveType->no_of_leaves = 999999;
+            $leaveType->monthly_limit = 0;
+
         }else{
             $leaveType->no_of_leaves = $request->yearly_leave_number;
             $leaveType->monthly_limit = $request->monthly_limit;

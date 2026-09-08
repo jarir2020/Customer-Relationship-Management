@@ -80,7 +80,7 @@ class LeaveType extends BaseModel
     public function leavesCount(): HasOne
     {
         return $this->hasOne(Leave::class, 'leave_type_id')
-            ->selectRaw('leave_type_id, count(*) as count, SUM(if(duration="half day", 1, 0)) AS halfday')
+            ->selectRaw('leave_type_id, count(*) as count, SUM(if(duration="half day", 0.5, 1)) AS weighted_count')
             ->groupBy('leave_type_id');
     }
 

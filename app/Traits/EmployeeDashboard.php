@@ -1017,6 +1017,10 @@ trait EmployeeDashboard
         $currentLongitude = $request->currentLongitude ?: session('current_longitude');
         $location = CompanyAddress::find($request->location ?: company()->id);
 
+        if (is_null($location) || is_null($currentLatitude) || is_null($currentLongitude)) {
+            return false;
+        }
+
         $latFrom = deg2rad($location->latitude);
         $latTo = deg2rad($currentLatitude);
 

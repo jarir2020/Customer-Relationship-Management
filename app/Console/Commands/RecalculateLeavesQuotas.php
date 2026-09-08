@@ -84,9 +84,14 @@ class RecalculateLeavesQuotas extends Command
                             $noOfLeavesAlloted = $this->calculateNoOfLeavesAlloted($settings, $joiningDate, $user, $value);
                         }
 
+                        $effectiveCarryForward = 0;
                         if ($leaveQuota && $leaveQuota->carry_forward_leaves > 0) {
-                            $noOfLeavesAlloted = $noOfLeavesAlloted + $leaveQuota->carry_forward_leaves;
+                            if (is_null($leaveQuota->carry_forward_expires_at) || now()->lessThanOrEqualTo($leaveQuota->carry_forward_expires_at)) {
+                                $effectiveCarryForward = $leaveQuota->carry_forward_leaves;
+                            }
                         }
+
+                        $noOfLeavesAlloted = $noOfLeavesAlloted + $effectiveCarryForward;
 
                         $noOfLeavesTaken = $this->calculateNoOfLeavesTaken($settings, $joiningDate, $user, $value);
 
