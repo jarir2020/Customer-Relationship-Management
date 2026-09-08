@@ -1,0 +1,25 @@
+# Customer Relationship Management (CRM)
+
+## Project
+Laravel 10 CRM application with MySQL backend. Features include project management, HR, invoicing, tickets, leads, attendance, and client portal.
+
+## Tech Stack
+- PHP 8.1+, Laravel 10
+- MySQL 8
+- Laravel Mix (Webpack), Bootstrap 4
+- Pusher/Laravel Echo for real-time
+
+## Setup
+1. `composer install`
+2. `npm install && npm run dev`
+3. Configure `.env` with DB credentials
+4. `php artisan migrate --seed`
+
+## Structure
+- `app/` - Controllers, Models, Traits
+- `database/migrations/` - 221 migration files
+- `resources/views/` - Blade templates
+- `routes/web.php` - Route definitions
+
+## License
+MIT
