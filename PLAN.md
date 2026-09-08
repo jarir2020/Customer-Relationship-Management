@@ -18,13 +18,15 @@ These are fixes for existing broken behavior — do these first.
 _Status: ✅ DONE — commit 6588e1e_
 
 ### 1.2 Task & Timelog Fixes (v6.0.16, v6.0.09)
-- Fix clock-in with location tracking
-- Fix duplicate task timer issue
-- Fix task assignment UI
-- Fix timesheet entry & visibility
-- Fix recurring task creation
-- Fix task board display issue
-- Fix task dependency handling
+- [x] Fix clock-in with location tracking
+- [x] Fix duplicate task timer issue
+- [ ] Fix task assignment UI
+- [ ] Fix timesheet entry & visibility
+- [x] Fix recurring task creation
+- [ ] Fix task board display issue
+- [ ] Fix task dependency handling
+
+_Status: 🔄 IN PROGRESS — commit 041ab12_
 
 ### 1.3 Invoice & Estimate Fixes (v5.5.15, v5.5.1)
 - Fix project budget calculation
