@@ -435,7 +435,7 @@ class TimelogController extends AccountBaseController
         $timeLog = new ProjectTimeLog();
         $activeTimer = ProjectTimeLog::selfActiveTimer();
 
-        if (is_null($activeTimer) || (!is_null($activeTimer->activeBreak))) {
+        if (is_null($activeTimer)) {
             $taskId = $request->task_id;
 
             if ($request->has('create_task')) {
