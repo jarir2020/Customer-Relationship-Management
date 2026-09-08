@@ -278,6 +278,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'account'], function () {
             // Rating routes
             Route::resource('project-ratings', ProjectRatingController::class);
 
+            // Project tags
+            Route::resource('project-tags', ProjectTagController::class);
+
             Route::get('projects/burndown/{projectId?}', [ProjectController::class, 'burndown'])->name('projects.burndown');
 
             /* PROJECT TEMPLATE */
@@ -687,6 +690,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'account'], function () {
         Route::post('employee_data', [TimelogController::class, 'employeeData'])->name('timelogs.employee_data');
         Route::post('user_time_logs', [TimelogController::class, 'userTimelogs'])->name('timelogs.user_time_logs');
         Route::post('approve_timelog', [TimelogController::class, 'approveTimelog'])->name('timelogs.approve_timelog');
+        Route::post('reject_timelog', [TimelogController::class, 'rejectTimelog'])->name('timelogs.reject_timelog');
+        Route::post('revert_timelog', [TimelogController::class, 'revertTimelog'])->name('timelogs.revert_timelog');
         Route::get('stopper-alert/{id}', [TimelogController::class, 'stopperAlert'])->name('timelogs.stopper_alert');
     });
     Route::resource('timelogs', TimelogController::class);

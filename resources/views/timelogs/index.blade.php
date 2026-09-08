@@ -348,21 +348,35 @@
 
         $('body').on('click', '.approve-timelog', function () {
             const id = $(this).data('time-id');
-            let url = "{{ route('timelogs.approve_timelog', ':id') }}";
-            url = url.replace(':id', id);
             const token = '{{ csrf_token() }}';
             $.easyAjax({
-                url: url,
+                url: "{{ route('timelogs.approve_timelog', ':id') }}".replace(':id', id),
                 type: "POST",
-                data: {
-                    id: id,
-                    _token: token
-                },
-                success: function (data) {
-                    showTable();
-                }
-            })
+                data: { id, _token: token },
+                success: () => showTable()
+            });
+        });
 
+        $('body').on('click', '.reject-timelog', function () {
+            const id = $(this).data('time-id');
+            const token = '{{ csrf_token() }}';
+            $.easyAjax({
+                url: "{{ route('timelogs.reject_timelog', ':id') }}".replace(':id', id),
+                type: "POST",
+                data: { id, _token: token },
+                success: () => showTable()
+            });
+        });
+
+        $('body').on('click', '.revert-timelog', function () {
+            const id = $(this).data('time-id');
+            const token = '{{ csrf_token() }}';
+            $.easyAjax({
+                url: "{{ route('timelogs.revert_timelog', ':id') }}".replace(':id', id),
+                type: "POST",
+                data: { id, _token: token },
+                success: () => showTable()
+            });
         });
 
         const applyQuickAction = () => {
